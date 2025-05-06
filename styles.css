@@ -1,7 +1,14 @@
 body {font-family: 'Nunito',sans-serif; font-weight: 300; margin: 0rem;}
-header {background-color: #fffbf8; display: flex; flex-direction: row; justify-content: space-between; color: #2b192e;}
+header {background-color: #fffbf8; display: flex; justify-content: flex-start; align-items: center; color: #2b192e;}
 footer {background-color: #2b192e; color: #fffbf8; padding: 3rem; display: flex; justify-content: space-between; align-items: center;}
 main {position: relative;}
+
+
+
+nav {color: #2b192e; text-decoration: none;}
+
+
+
 
 img {max-width: 100%;}
 header img {width: 7rem; display: block;}
@@ -9,6 +16,7 @@ header img {width: 7rem; display: block;}
 .instagram {padding: 1rem; width: 4rem;margin: 0rem 4rem 5rem -3rem;}
 main img {max-width: 100%;}
 footer>.footer-logo {left: 5rem;}
+.gallery img {max-width: 100.025vw; height: calc(100.25vw/1.778);}
 
 .menu {background-image: url(Images/Menu_Background.PNG); color: #fffbf8; background-size: cover;}
 .sauna {background-color: #2b192e; color: #fffbf8;}
@@ -16,21 +24,34 @@ footer>.footer-logo {left: 5rem;}
 .our-story {background-color: #e8c9d5;}
 
 header>h1 {font-family: 'Poppins',sans-serif;}
-main>h2 {font-family: 'Poppins',sans-serif; color: #fffbf8;}
+main>h2 {font-family: 'Poppins',sans-serif;}
 .headline {position: absolute; z-index: 1; color: #fffbf8; width: 48rem; top: 40%; left: calc(50% - 24rem); text-align: center;}
 .headline h2 {font-family: 'Poppins',sans-serif;}
 footer p {margin: 0rem 3rem 5rem 15rem;}
+.fullmenu {display: block; margin-left: auto; margin-right: auto;}
+.fullmenu h2 {text-align: center;}
+.fullmenu p {text-align: center;}
+.our-storyformat {color: #2b192e; display: flex; justify-content: space-evenly; gap: 2.5rem; align-items: center;}
+.our-storyformat img {max-width: 30rem; margin: 10rem;}
+
+
+
+
+.expectmain {margin-left: 10rem; z-index: 1;}
+
+
 
 .button {padding: .5rem 2rem; border-radius: 3rem; background-color: #ce8ca5; color: #fffbf8; text-decoration: none; display: inline-block; cursor: pointer; font-family: 'Nunito',sans-serif; border: none;}
+.button:hover {background-color: #d49db2;}
 .purple-button {padding: .5rem 2.5rem; border-radius: .75rem; background-color: #a88fad; color: #fffbf8; text-decoration: none; display: inline-block; cursor: pointer; font-family: 'Nunito',sans-serif; border: none; position: fixed; bottom: 10%; right: 5%;}
 .purple-button img {max-width: 2rem; vertical-align: middle; margin-right: .5rem;}
+.purple-button:hover {background-color: #927099;}
 
 .gallery {position: relative; width: 100%; max-width: 100%; height: calc(100vw/1.778); overflow: hidden;}
 .gallery .slide {display: flex; position: absolute; top: 0; left: 0; margin-top: 1rem; overflow: hidden;}
 .arrow {position: absolute; font-size: 3rem; font-family: 'Poppins', 'Nunito'; color: #fff; text-shadow: 2px 2px 2px rgb(0,0,0,0.6); cursor: pointer; z-index: 1; top: calc(50% - 1.5rem);}
 .left {left: .5rem;}
 .right {right: .5rem;}
-.gallery img {max-width: 100.025vw; height: calc(100.25vw/1.778);}
 
 .menu td,th {padding: .25rem .75rem;}
 td:first-child, th:first-child {text-align: left;}
