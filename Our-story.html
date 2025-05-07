@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hearth & Honey</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="our-story">
     <header>
-        <img src="Images/Hummingbird.png" alt="Sketched out hummingbird">
-        <h1>Hearth & Honey</h1>
-        <h3>SAUNA & TEA</h3>
-        <nav>
+        <img class=hummingbird src="Images/Hummingbird.png" alt="Sketched out hummingbird">
+        <div>
+            <h1>Hearth & Honey</h1>
+            <h3>SAUNA & TEA</h3>
+        </div>
+        <div class="hamburger" onclick="toggleNav()">
+            <hr>
+            <hr>
+            <hr>
+        </div>
+        <nav class="toggle-nav">
             <a href="Index.html">Home</a>
             <a href="Book-sauna.html">Book Sauna</a>
             <a href="Menu.html">Menu</a>
@@ -24,8 +32,10 @@
         </nav>
     </header>
     <main class="our-storyformat">
-        <h2>Our Story</h2>
-        <p>Hearth & Honey was born out of Nya’s love for slow living, good tea, and the peaceful rhythms of nature. After spending years exploring new places and embracing the simple joys of community, she returned to her hometown of Bayfield, WI, ready to create a space where people could connect with each other and the world around them. Whether you’re here for a cup of tea, a session in the sauna, or just to relax by Lake Superior, Hearth & Honey is all about taking a moment to unwind, be present, and enjoy life at a slower pace.</p>
+        <div>
+            <h2>Our Story</h2>
+            <p>Hearth & Honey was born out of Nya’s love for slow living, good tea, and the peaceful rhythms of nature. After spending years exploring new places and embracing the simple joys of community, she returned to her hometown of Bayfield, WI, ready to create a space where people could connect with each other and the world around them. Whether you’re here for a cup of tea, a session in the sauna, or just to relax by Lake Superior, Hearth & Honey is all about taking a moment to unwind, be present, and enjoy life at a slower pace.</p>
+        </div>
         <img src="Images/AboutMe_Background.JPG" alt="Nya smiling with a camera">
     </main>
     <footer id="contact">
@@ -33,11 +43,13 @@
             <p>132 Driftwood Lane Bayfield, WI 54814 <br><br>
                 hello@hearthandhoney.com <br><br>
                 (715) 555-1342</p>
-            <img class="facebook" src="Images/Facebook.png">
-            <img class="instagram" src="Images/Instagram.png">
+                <div>
+                <a href="https://fb.com/"><img class="facebook" src="Images/Facebook.png" alt="Facebook icon"></a>
+                <a href="https://www.instagram.com/"><img class="instagram" src="Images/Instagram.png" alt="Instagram Logo"></a>
+                </div>
         </div>
-        <img class="footer-logo" src="Images/Full-Logo.png">
+        <img class="footer-logo" src="Images/Full-Logo.png" alt="Hearth and Honey Logo">
     </footer>
-    <a class="purple-button" href="Book-sauna.html"><img src="Images/Calendar_Icon.png">Book Sauna</a>
+    <a class="purple-button" href="Book-sauna.html"><img src="Images/Calendar_Icon.png" alt="Calendar Icon">Book Sauna</a>
 </body>
 </html>

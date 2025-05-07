@@ -1,14 +1,10 @@
 body {font-family: 'Nunito',sans-serif; font-weight: 300; margin: 0rem;}
-header {background-color: #fffbf8; display: flex; justify-content: flex-start; align-items: center; color: #2b192e;}
+header {display: flex; align-items: center; background-color: #fffbf8;}
+header nav {background-color: #2b192e; position: fixed; width: 100%; top: 8rem; left: 100%; transition-property: left; transition-duration: .5s; transition-timing-function: ease-in-out; z-index: 3;}
+header nav.show {left: 0;}
+header nav a {display: block; color: #fffbf8; text-align: center; text-decoration: none; padding: 3rem; border: 1px solid #a88fad; z-index: -1;}
 footer {background-color: #2b192e; color: #fffbf8; padding: 3rem; display: flex; justify-content: space-between; align-items: center;}
 main {position: relative;}
-
-
-
-nav {color: #2b192e; text-decoration: none;}
-
-
-
 
 img {max-width: 100%;}
 header img {width: 7rem; display: block;}
@@ -16,30 +12,35 @@ header img {width: 7rem; display: block;}
 .instagram {padding: 1rem; width: 4rem;margin: 0rem 4rem 5rem -3rem;}
 main img {max-width: 100%;}
 footer>.footer-logo {left: 5rem;}
-.gallery img {max-width: 100.025vw; height: calc(100.25vw/1.778);}
+.gallery img {max-width: 100.025vw; height: calc(100.25vw/1.778); z-index: -1;}
 
 .menu {background-image: url(Images/Menu_Background.PNG); color: #fffbf8; background-size: cover;}
 .sauna {background-color: #2b192e; color: #fffbf8;}
-.expect {background-image: url(Images/Lake_Background.PNG); color: #fffbf8; background-size: cover;}
-.our-story {background-color: #e8c9d5;}
+.expect main {background-image: url(Images/Lake_Background.PNG); color: #fffbf8; background-size: cover; background-position: center;}
+.expectmain {display: flex; flex-direction: row; padding-top: 5rem; padding-bottom: 8rem; padding-left: 10rem; padding-right: 10rem; gap: 3rem; justify-content: space-between;}
+.expectmain div>h2 {font-family: 'Poppins',sans-serif;}
 
-header>h1 {font-family: 'Poppins',sans-serif;}
+.our-story {background-color: #e8c9d5;}
+.calendar {margin: 5rem; display: flex; flex-direction: row;}
+.calendar div {margin-left: 5rem; font-size: 1.25rem;}
+
+.hamburger {width: 40px; padding: 1rem; position: fixed; right: 3rem; z-index: 5;}
+.hamburger hr {margin: .75rem 0rem; color: #2b192e;}
+
+header h1 {font-family: 'Poppins',sans-serif; margin-bottom: 0; color: #2b192e;}
+header h3 {margin-top: 0; color: #2b192e;}
 main>h2 {font-family: 'Poppins',sans-serif;}
 .headline {position: absolute; z-index: 1; color: #fffbf8; width: 48rem; top: 40%; left: calc(50% - 24rem); text-align: center;}
 .headline h2 {font-family: 'Poppins',sans-serif;}
 footer p {margin: 0rem 3rem 5rem 15rem;}
-.fullmenu {display: block; margin-left: auto; margin-right: auto;}
+.fullmenu {display: block; margin-left: auto; margin-right: auto; padding-top: 4rem; padding-bottom: 7rem;}
 .fullmenu h2 {text-align: center;}
 .fullmenu p {text-align: center;}
-.our-storyformat {color: #2b192e; display: flex; justify-content: space-evenly; gap: 2.5rem; align-items: center;}
-.our-storyformat img {max-width: 30rem; margin: 10rem;}
 
-
-
-
-.expectmain {margin-left: 10rem; z-index: 1;}
-
-
+.our-storyformat img {max-width: 30rem; max-height: fit-content;}
+.our-storyformat {display: flex; flex-direction: row; gap: 6rem; padding: 10rem;}
+.our-storyformat h2 {font-family: 'Poppins',sans-serif; font-size: 2.5rem;}
+.fullmenu table {width: 35rem; margin: auto;}
 
 .button {padding: .5rem 2rem; border-radius: 3rem; background-color: #ce8ca5; color: #fffbf8; text-decoration: none; display: inline-block; cursor: pointer; font-family: 'Nunito',sans-serif; border: none;}
 .button:hover {background-color: #d49db2;}
@@ -55,3 +56,22 @@ footer p {margin: 0rem 3rem 5rem 15rem;}
 
 .menu td,th {padding: .25rem .75rem;}
 td:first-child, th:first-child {text-align: left;}
+
+@media (max-width:600px) {
+    footer {flex-direction: column-reverse;}
+    footer p {margin: 0rem;}
+    .facebook {width: 4rem; margin: 0;}
+    .instagram {width: 4rem; padding: 1rem; margin: 0;}
+    .calendar {display: flex; flex-direction: column; padding-right: 2rem;}
+    .calendar div {margin-left: 2rem;}
+    .calendar iframe {width: 100%;}
+    .hamburger {right: 1rem;}
+    .headline {width: 80%; top:24%;}
+    .menu {background-size: cover; background-position: left;}
+    .fullmenu table {width: 20rem; margin: auto; margin-left: 6rem;}
+    .expectmain {flex-direction: column; padding-left: 5rem; gap: 1rem;}
+    .our-storyformat img {max-width: 100%; max-height: fit-content;}
+    .our-storyformat {display: flex; flex-direction: column; gap: 1rem; padding: 2rem;}
+}
+@media (max-width:900px) {.headline {width: 90%; left: 5%;}
+.our-storyformat img {max-height: fit-content;}}

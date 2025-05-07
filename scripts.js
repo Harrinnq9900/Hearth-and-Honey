@@ -22,3 +22,15 @@ document.addEventListener('DOMContentLoaded', function(){
 		});
 	}
 });
+function toggleNav() {
+	let elements = document.getElementsByClassName('toggle-nav');
+	for(let i = 0; i < elements.length; i++){
+	elements[i].classList.toggle('show');
+	}
+}
+//dialog box
+document.addEventListener("DOMContentLoaded", function(){
+	document.querySelector('nav a[href="#contact"]').addEventListener('click', function(){
+		document.querySelector('nav').classList.toggle('show');
+	});
+});

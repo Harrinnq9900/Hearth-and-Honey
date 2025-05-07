@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hearth & Honey</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="sauna">
     <header>
-        <img src="Images/Hummingbird.png" alt="Sketched out hummingbird">
-        <h1>Hearth & Honey</h1>
-        <h3>SAUNA & TEA</h3>
-        <nav>
+        <img class=hummingbird src="Images/Hummingbird.png" alt="Sketched out hummingbird">
+        <div>
+            <h1>Hearth & Honey</h1>
+            <h3>SAUNA & TEA</h3>
+        </div>
+        <div class="hamburger" onclick="toggleNav()">
+            <hr>
+            <hr>
+            <hr>
+        </div>
+        <nav class="toggle-nav">
             <a href="Index.html">Home</a>
             <a href="Book-sauna.html">Book Sauna</a>
             <a href="Menu.html">Menu</a>
@@ -23,27 +31,32 @@
             <a href="#contact">Contact Us</a>
         </nav>
     </header>
-    <main>
-        <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&src=OGYzNjM1MjFkZDZlZDU4MDg0N2VmMTg0ODE2ZWY0NGY5ZmQ1NTA4ZDFlOTMzYThkNGRmMGIxYWM5YzVmNWI2MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688" style="border:solid 1px #777" width="500" height="600" frameborder="0" scrolling="no"></iframe>
-        <h2>Sauna + Shop Combo Deals</h2>
-        <h3>Reset Together</h3>
-            <ul>
-                <li>60-minute private sauna for two or more, cold plunge access, and Habit Tea for everyone. </li>
-            </ul>
-        <h3>Community Hour</h3>
-            <ul>
-                <li>Drop-in community sauna, group cold plunge, and a rotating selection of Habit Tea – come as you are, meet someone new.</li>
-            </ul>
+    <main class="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&src=OGYzNjM1MjFkZDZlZDU4MDg0N2VmMTg0ODE2ZWY0NGY5ZmQ1NTA4ZDFlOTMzYThkNGRmMGIxYWM5YzVmNWI2MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688" style="border:solid 1px #777" width="500" height="600" ></iframe>
+        <div>
+            <h2>Sauna + Shop Combo Deals</h2>
+            <h3>Reset Together</h3>
+                <ul>
+                    <li>60-minute private sauna for two or more, cold plunge access, and Habit Tea for everyone. </li>
+                </ul>
+            <h3>Community Hour</h3>
+                <ul>
+                    <li>Drop-in community sauna, group cold plunge, and a rotating selection of Habit Tea – come as you are, meet someone new.</li>
+                </ul>
+        </div>
     </main>
     <footer id="contact">
         <div>
             <p>132 Driftwood Lane Bayfield, WI 54814 <br><br>
                 hello@hearthandhoney.com <br><br>
                 (715) 555-1342</p>
-            <img class="facebook" src="Images/Facebook.png">
-            <img class="instagram" src="Images/Instagram.png">
+                <div>
+                <a href="https://fb.com/"><img class="facebook" src="Images/Facebook.png" alt="Facebook icon"></a>
+                <a href="https://www.instagram.com/"><img class="instagram" src="Images/Instagram.png" alt="Instagram Logo"></a>
+                </div>
         </div>
-        <img class="footer-logo" src="Images/Full-Logo.png">
+        <img class="footer-logo" src="Images/Full-Logo.png" alt="Hearth and Honey Logo">
     </footer>
+    <a class="purple-button" href="Book-sauna.html"><img src="Images/Calendar_Icon.png" alt="Calendar Icon">Book Sauna</a>
 </body>
 </html>
